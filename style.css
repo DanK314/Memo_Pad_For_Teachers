@@ -7,7 +7,7 @@ body {
 }
 
 /* 메모장 박스 스타일 */
-.memo-pad {
+.memo-pad , .side-doc {
     max-width: 400px;
     margin: 60px auto;
     background: #fff;
@@ -65,4 +65,23 @@ button:hover {
     margin-top: 10px;
     text-align: left;
     word-break: break-all;
+}
+.side-doc h2 {
+    font-size: 1.3rem;
+    color: #636e72;
+    margin-bottom: 18px;
+}
+#docContent {
+    width: 100%;
+    min-height: 120px;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    background: #f8f9fa;
+    color: #636e72;
+    box-sizing: border-box;
+    white-space: pre-line;
+    display: block;
+    margin-top: 8px;
 }
