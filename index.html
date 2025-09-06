@@ -9,9 +9,14 @@
     <main class="memo-pad">
         <h1>Teacher's Memo Pad</h1>
         <textarea id="memoInput" placeholder="Write your memo here..."></textarea>
+        <input type="text" id="filenameInput" placeholder="파일명을 입력하세요 (예: memo.txt)" style="margin-bottom:10px;width:100%;box-sizing:border-box;">
         <button onclick="saveMemo()">Save Memo</button>
         <section class="saved-memo" id="savedMemo"></section>
     </main>
+    <aside class="side-doc">
+        <h2>초등학교 교육 목표</h2>
+        <p id = "docContent"></p>
+    </aside>
     <script src="script.js"></script>
 </body>
 </html>
