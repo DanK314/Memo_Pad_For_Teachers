@@ -1,0 +1,68 @@
+/* 전체 배경과 폰트 설정 */
+body {
+    background: #f5f6fa;
+    font-family: 'Segoe UI', 'Malgun Gothic', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 메모장 박스 스타일 */
+.memo-pad {
+    max-width: 400px;
+    margin: 60px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    padding: 32px 24px;
+    text-align: center;
+}
+
+/* 제목 스타일 */
+.memo-pad h1 {
+    font-size: 1.7rem;
+    color: #2d3436;
+    margin-bottom: 24px;
+}
+
+/* textarea 스타일 */
+#memoInput {
+    width: 100%;
+    min-height: 120px;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    resize: vertical;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+}
+
+/* 버튼 스타일 */
+button {
+    background: #0984e3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 28px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-bottom: 18px;
+}
+
+button:hover {
+    background: #74b9ff;
+}
+
+/* 저장된 메모 영역 스타일 */
+.saved-memo {
+    background: #dfe6e9;
+    border-radius: 8px;
+    padding: 14px;
+    color: #636e72;
+    font-size: 1rem;
+    min-height: 40px;
+    margin-top: 10px;
+    text-align: left;
+    word-break: break-all;
+}
