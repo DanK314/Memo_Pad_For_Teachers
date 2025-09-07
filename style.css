@@ -90,3 +90,6 @@ button:hover {
     display: block;
     margin-top: 8px;
 }
+p {
+    text-align: left;
+}
