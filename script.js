@@ -9,8 +9,7 @@ function saveMemo() {
         return;
     }
     if (!filename.toLowerCase().endsWith('.txt')) {
-        alert('파일명은 .txt 확장자로 끝나야 합니다.');
-        return;
+        filenameInput += '.txt';
     }
     document.getElementById('savedMemo').textContent = memo;
     localStorage.setItem('Memo', memo);
