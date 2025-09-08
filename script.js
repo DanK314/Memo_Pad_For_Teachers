@@ -1,7 +1,7 @@
 function saveMemo() {
     const memo = document.getElementById('memoInput').value;
-    const filenameInput = document.getElementById('filenameInput').value.trim();
-    const filename = filenameInput || 'memo.txt';
+    let filenameInput = document.getElementById('filenameInput').value.trim();
+    let filename = filenameInput || 'memo.txt';
     // 파일명 제한: 특수문자 및 확장자 검사
     const invalid = /[\\\/:\*\?"<>\|]/;
     if (invalid.test(filename)) {
@@ -9,7 +9,7 @@ function saveMemo() {
         return;
     }
     if (!filename.toLowerCase().endsWith('.txt')) {
-        filenameInput += '.txt';
+        filename += '.txt';
     }
     document.getElementById('savedMemo').textContent = memo;
     localStorage.setItem('Memo', memo);
